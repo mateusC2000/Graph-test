@@ -1,3 +1,32 @@
+post = Artist.create!(
+  email: "post.malone@example.com",
+  first_name: "Post",
+  last_name: "Malone"
+)
+
+Item.create!(
+  [
+    {
+      title: "Stoney",
+      description: "SADSADSAD",
+      artist: post,
+      image_url: "https://lastfm.freetls.fastly.net/i/u/770x0/1366e6fd7ce4ea855db660e8e3cf3bd7.jpg#1366e6fd7ce4ea855db660e8e3cf3bd7"
+    },
+    {
+      title: "Beerbongs & Bentleys",
+      description: "SADSADSAD",
+      artist: post,
+      image_url: "https://studiosol-a.akamaihd.net/uploadfile/letras/albuns/9/7/b/5/642301530027004.jpg"
+    },
+    {
+      title: "Hollywood's Bleeding",
+      description: "SADSADSAD",
+      artist: post,
+      image_url: "https://m.media-amazon.com/images/I/61QQv9A3cCL._AC_SL1400_.jpg"
+    },
+  ]
+)
+
 taylor = Artist.create!(
   email: "taylor.swift@example.com",
   first_name: "Taylor",
